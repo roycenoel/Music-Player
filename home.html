@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player - Home</title>
+    <style>
+        :root {
+            --bg: #f5f5f7;
+            --text: #1d1d1f;
+            --gray: #383839;
+            --accent: #0071e3;
+            --glass: rgba(255, 255, 255, 0.332);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: quicksand;
+            background: linear-gradient(135deg, #f0f0f5, #e8e8ef);
+            color: var(--text);
+            overflow-x: hidden;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateY(-2px);
+        }
+
+
+
+
+
+        .hero {
+            padding: 80px 20px 40px;
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            transition: transform 0.6s ease, opacity 0.6s ease;
+            background: linear-gradient(90deg, #ff4d4d, #0071e3, #ff4d4d);
+            background-size: 200% auto;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            animation: gradientShift 5s linear infinite;
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% center;
+            }
+
+            100% {
+                background-position: 200% center;
+            }
+        }
+
+        .fade-text {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.4s ease;
+        }
+
+        .fade-text.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .music-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .song-card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 24px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeUp 0.8s ease both;
+            position: relative;
+        }
+
+        .song-card.large {
+            grid-column: span 2;
+        }
+
+        .song-card:hover {
+            transform: translateY(-8px) scale(1.01);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+        }
+
+        .song-card img {
+            width: 100%;
+            border-radius: 16px;
+            object-fit: cover;
+            height: 220px;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .song-card:hover img {
+            transform: scale(1.025);
+        }
+
+        .album-title-overlay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #d6d6d6;
+            text-align: center;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 24px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            color: var(--gray);
+            background-color: transparent;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .song-card.large {
+                grid-column: span 1;
+            }
+
+            .song-card img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="back-button" onclick="history.back()" title="Go Back">
+        &#8592;
+    </div>
+
+
+
+    <section class="hero">
+        <h1>Feel the Music</h1>
+        <p>Your sound, your world. Stream everything.</p>
+    </section>
+
+
+    <section class="music-preview">
+        <div class="song-card large">
+            <img src="BlindingLights.jpg" />
+            <div class="album-title-overlay">Blinding Lights</div>
+        </div>
+        <div class="song-card">
+            <img src="365Days.jpg" />
+            <div class="album-title-overlay">365 Days</div>
+        </div>
+        <div class="song-card">
+            <img src="TwoFeet.jpg" />
+            <div class="album-title-overlay">Two Feet</div>
+        </div>
+        <div class="song-card large">
+            <img src="AfterHours.jpg" />
+            <div class="album-title-overlay">After Hours</div>
+        </div>
+        <div class="song-card">
+            <img src="EdSheeran.jpg" />
+            <div class="album-title-overlay">Ed Sheeran</div>
+        </div>
+        <div class="song-card">
+            <img src="Charlieputt.jpg" />
+            <div class="album-title-overlay">Charlie Puth</div>
+        </div>
+        <div class="song-card">
+            <img src="Stay.jpg" />
+            <div class="album-title-overlay">Stay</div>
+        </div>
+        <div class="song-card">
+            <img src="Elvis.jpg" />
+            <div class="album-title-overlay">Elvis Presley</div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        &copy; 2025 MyMusic. Crafted with 🎵 and style.
+    </footer>
+
+</body>
+
+<script>
+    const heroTitle = document.querySelector(".hero h1");
+    const heroSubtitle = document.querySelector(".hero p");
+
+    const textPairs = [
+        ["Feel the Music", "Your sound, your world. Stream everything."],
+        ["Stream Your Vibe", "Vibe with tracks that match your mood."],
+        ["Unlock Every Beat", "Discover trending and timeless tunes."],
+        ["Music for Every Mood", "Create playlists for every emotion."],
+        ["Your Sound, Your World", "Personalize your listening experience."]
+    ];
+
+    let index = 0;
+
+    // Setup initial classes
+    heroTitle.classList.add("fade-text", "visible");
+    heroSubtitle.classList.add("fade-text", "visible");
+
+    function changeText() {
+        // Fade out both
+        heroTitle.classList.remove("visible");
+        heroSubtitle.classList.remove("visible");
+
+        // After fade-out, update and fade back in
+        setTimeout(() => {
+            index = (index + 1) % textPairs.length;
+            heroTitle.textContent = textPairs[index][0];
+            heroSubtitle.textContent = textPairs[index][1];
+
+            heroTitle.classList.add("visible");
+            heroSubtitle.classList.add("visible");
+        }, 400); // should match your fade-out duration
+    }
+
+    // Run every 3 seconds
+    setInterval(changeText, 3000);
+</script>
+
+
+
+
+</html>

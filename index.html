@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Library</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+
+
+    <nav>
+        <div class="left-group">
+            <div class="menu-toggle" id="menuToggle">&#9776;</div>
+
+            <div class="search-wrapper">
+                <input type="text" id="searchInput" class="search-field" placeholder="Search music..." />
+            </div>
+
+            <div class="logo">
+                <img src="wave-sound.png" alt="Logo" class="logo_image" id="logoImage" />
+            </div>
+        </div>
+
+        <div class="nav-links" id="navLinks">
+            <a href="home.html">Home</a>
+            <a href="library.html">Library</a>
+            <a href="playlist.html">Playlist</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="music-list" id="musicList">
+        <!-- Sample Songs -->
+
+        <div class="song" data-src="song1.mp3" data-title="Sapphire" data-artist="Ed Sheeran" data-img="cover1.jpg">
+            <div class="song-details">
+                <span class="song-number">1</span>
+                <img src="cover1.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Sapphire</div>
+                    <div class="artist">Ed Sheeran</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song2.mp3" data-title="I Feel It Coming" data-artist="The Weeknd"
+            data-img="cover2.jpg">
+            <div class="song-details">
+                <span class="song-number">2</span>
+                <img src="cover2.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">I Feel It Coming</div>
+                    <div class="artist">The Weeknd</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song3.mp3" data-title="Closer" data-artist="Chainsmokers" data-img="cover3.jpeg">
+            <div class="song-details">
+                <span class="song-number">3</span>
+                <img src="cover3.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Closer</div>
+                    <div class="artist">Chainsmokers</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song4.mp3" data-title="Despacito" data-artist="Luis Fonsi" data-img="cover4.jpg">
+            <div class="song-details">
+                <span class="song-number">4</span>
+                <img src="cover4.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Despacito</div>
+                    <div class="artist">Luis Fonsi</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song5.mp3" data-title="Blue" data-artist="Yung Kai" data-img="cover5.jpeg">
+            <div class="song-details">
+                <span class="song-number">5</span>
+                <img src="cover5.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Blue</div>
+                    <div class="artist">Yung Kai</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song6.mp3" data-title="One love" data-artist="Blue" data-img="cover6.jpeg">
+            <div class="song-details">
+                <span class="song-number">6</span>
+                <img src="cover6.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">One love</div>
+                    <div class="artist">Blue</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song7.mp3" data-title="Calm down" data-artist="Selena Gomez & Rema"
+            data-img="cover7.jpeg">
+            <div class="song-details">
+                <span class="song-number">7</span>
+                <img src="cover7.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Calm down</div>
+                    <div class="artist">Selena Gomez & Rema</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song8.mp3" data-title="Way down we go" data-artist="Kaleo" data-img="cover8.jpg">
+            <div class="song-details">
+                <span class="song-number">8</span>
+                <img src="cover8.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Way down we go</div>
+                    <div class="artist">Kaleo</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song" data-src="song9.mp3" data-title="As it was" data-artist="Harry Styles" data-img="cover9.jpeg">
+            <div class="song-details">
+                <span class="song-number">9</span>
+                <img src="cover9.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">As it was</div>
+                    <div class="artist">Harry Styles</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Fixed Bottom Player -->
+    <section class="music-player">
+        <img src="cover1.jpg" width="50" height="50" id="player-thumb" style="border-radius: 6px;" />
+        <audio id="audio-player" src="song1.mp3"></audio>
+
+        <div class="player-controls">
+            <img src="rewind-button.png" id="prevBtn" />
+            <img src="play-button-arrowhead.png" id="playPauseBtn" />
+            <img src="forward-button.png" id="nextBtn" />
+        </div>
+
+        <div class="song-info" id="currentSongInfo">
+            <div id="player-song-title" class="song-title"></div>
+            <div id="player-artist" class="song-artist"></div>
+        </div>
+
+
+        <div class="lyrics-container" style="display: none;">
+            <div class="lyrics" id="lyricsText">Select a song to see lyrics...</div>
+        </div>
+
+
+        <div id="lyricsLines" class="lyrics-lines" style="display: none;"></div>
+
+        <div class="bottom-waveform" id="bottomWaveform"></div>
+        <div class="track-time" id="timeDisplay">0:00 / 0:00</div>
+    </section>
+
+
+
+
+
+
+
+    <script src="lyricsData.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

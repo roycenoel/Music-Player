@@ -1,0 +1,264 @@
+<div class="music-list" id="musicList">
+        <!-- Sample Songs -->
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong1.mp3?alt=media"
+            data-title="Sapphire" data-artist="Ed Sheeran" data-img="covers/cover1.jpg">
+            <div class="song-details">
+                <span class="song-number">1</span>
+                <img src="covers/cover1.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Sapphire</div>
+                    <div class="artist">Ed Sheeran</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong2.mp3?alt=media"
+            data-title="I Feel It Coming" data-artist="The Weeknd" data-img="covers/cover2.jpg">
+            <div class="song-details">
+                <span class="song-number">2</span>
+                <img src="covers/cover2.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">I Feel It Coming</div>
+                    <div class="artist">The Weeknd</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong3.mp3?alt=media"
+            data-title="Closer" data-artist="Chainsmokers" data-img="covers/cover3.jpeg">
+            <div class="song-details">
+                <span class="song-number">3</span>
+                <img src="covers/cover3.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Closer</div>
+                    <div class="artist">Chainsmokers</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong4.mp3?alt=media"
+            data-title="Despacito" data-artist="Luis Fonsi" data-img="covers/cover4.jpg">
+            <div class="song-details">
+                <span class="song-number">4</span>
+                <img src="covers/cover4.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Despacito</div>
+                    <div class="artist">Luis Fonsi</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong5.mp3?alt=media"
+            data-title="Blue" data-artist="Yung Kai" data-img="covers/cover5.jpeg">
+            <div class="song-details">
+                <span class="song-number">5</span>
+                <img src="covers/cover5.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Blue</div>
+                    <div class="artist">Yung Kai</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong6.mp3?alt=media"
+            data-title="One love" data-artist="Blue" data-img="covers/cover6.jpeg">
+            <div class="song-details">
+                <span class="song-number">6</span>
+                <img src="covers/cover6.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">One love</div>
+                    <div class="artist">Blue</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong7.mp3?alt=media"
+            data-title="Calm down" data-artist="Selena Gomez & Rema" data-img="covers/cover7.jpeg">
+            <div class="song-details">
+                <span class="song-number">7</span>
+                <img src="covers/cover7.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Calm down</div>
+                    <div class="artist">Selena Gomez & Rema</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong8.mp3?alt=media"
+            data-title="Way down we go" data-artist="Kaleo" data-img="covers/cover8.jpg">
+            <div class="song-details">
+                <span class="song-number">8</span>
+                <img src="covers/cover8.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Way down we go</div>
+                    <div class="artist">Kaleo</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./https://firebasestorage.googleapis.com/v0/b/spreadlink-81331.appspot.com/o/songs%2Fsong9.mp3?alt=media"
+            data-title="As it was" data-artist="Harry Styles" data-img="covers/cover9.jpeg">
+            <div class="song-details">
+                <span class="song-number">9</span>
+                <img src="covers/cover9.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">As it was</div>
+                    <div class="artist">Harry Styles</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+    </div>
+
+
+
+
+
+    //////////////////////////////////////////////////////////////////////
+
+
+
+
+    <div class="song"
+            data-src="./songs/song1.mp3"
+            data-title="Sapphire" data-artist="Ed Sheeran" data-img="covers/cover1.jpg">
+            <div class="song-details">
+                <span class="song-number">1</span>
+                <img src="covers/cover1.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Sapphire</div>
+                    <div class="artist">Ed Sheeran</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song2.mp3"
+            data-title="I Feel It Coming" data-artist="The Weeknd" data-img="covers/cover2.jpg">
+            <div class="song-details">
+                <span class="song-number">2</span>
+                <img src="covers/cover2.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">I Feel It Coming</div>
+                    <div class="artist">The Weeknd</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song3.mp3"
+            data-title="Closer" data-artist="Chainsmokers" data-img="covers/cover3.jpeg">
+            <div class="song-details">
+                <span class="song-number">3</span>
+                <img src="covers/cover3.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Closer</div>
+                    <div class="artist">Chainsmokers</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song4.mp3"
+            data-title="Despacito" data-artist="Luis Fonsi" data-img="covers/cover4.jpg">
+            <div class="song-details">
+                <span class="song-number">4</span>
+                <img src="covers/cover4.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Despacito</div>
+                    <div class="artist">Luis Fonsi</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song5.mp3"
+            data-title="Blue" data-artist="Yung Kai" data-img="covers/cover5.jpeg">
+            <div class="song-details">
+                <span class="song-number">5</span>
+                <img src="covers/cover5.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Blue</div>
+                    <div class="artist">Yung Kai</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song6.mp3"
+            data-title="One love" data-artist="Blue" data-img="covers/cover6.jpeg">
+            <div class="song-details">
+                <span class="song-number">6</span>
+                <img src="covers/cover6.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">One love</div>
+                    <div class="artist">Blue</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song7.mp3"
+            data-title="Calm down" data-artist="Selena Gomez & Rema" data-img="covers/cover7.jpeg">
+            <div class="song-details">
+                <span class="song-number">7</span>
+                <img src="covers/cover7.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Calm down</div>
+                    <div class="artist">Selena Gomez & Rema</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song8.mp3"
+            data-title="Way down we go" data-artist="Kaleo" data-img="covers/cover8.jpg">
+            <div class="song-details">
+                <span class="song-number">8</span>
+                <img src="covers/cover8.jpg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">Way down we go</div>
+                    <div class="artist">Kaleo</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+
+        <div class="song"
+            data-src="./songs/song9.mp3"
+            data-title="As it was" data-artist="Harry Styles" data-img="covers/cover9.jpeg">
+            <div class="song-details">
+                <span class="song-number">9</span>
+                <img src="covers/cover9.jpeg" class="album-thumb" />
+                <div class="info">
+                    <div class="title">As it was</div>
+                    <div class="artist">Harry Styles</div>
+                </div>
+            </div>
+            <div class="song-meta">0.00</div>
+        </div>
+    </div>
