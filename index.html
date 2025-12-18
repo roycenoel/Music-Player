@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Music Library</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -20,13 +19,15 @@
         <div class="left-group">
             <div class="menu-toggle" id="menuToggle">&#9776;</div>
 
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo_image" id="logoImage" />
+            </div>
+
             <div class="search-wrapper">
                 <input type="text" id="searchInput" class="search-field" placeholder="Search music..." />
             </div>
 
-            <div class="logo">
-                <img src="wave-sound.png" alt="Logo" class="logo_image" id="logoImage" />
-            </div>
+            
         </div>
 
         <div class="nav-links" id="navLinks">
@@ -37,16 +38,108 @@
         </div>
     </nav>
 
+    <!-- Hero Section for Playlists -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h2 class="hero-title">Featured Playlists</h2>
+            <p class="hero-subtitle">Discover your favorite music collections</p>
+            <div class="playlists-container">
+                <button class="scroll-btn scroll-btn-left" id="scrollLeftBtn" aria-label="Scroll left">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6" />
+                    </svg>
+                </button>
+                <div class="playlists-scroll" id="playlistsScroll">
+                    <div class="playlists-grid">
+                        <div class="playlist-card" data-playlist="chill">
+                            <div class="playlist-image">
+                                <img src="chill.jpg" alt="Chill Vibes" />
+                                <div class="playlist-overlay">
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Chill Vibes</h3>
+                                <p>Relax and unwind</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card" data-playlist="pop">
+                            <div class="playlist-image">
+                                <img src="BlindingLights.jpg" alt="Pop Hits" />
+                                <div class="playlist-overlay">
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Pop Hits</h3>
+                                <p>Top charting songs</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card" data-playlist="indie">
+                            <div class="playlist-image">
+                                <img src="TwoFeet.jpg" alt="Indie Mix" />
+                                <div class="playlist-overlay">
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Indie Mix</h3>
+                                <p>Alternative sounds</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card" data-playlist="acoustic">
+                            <div class="playlist-image">
+                                <img src="EdSheeran.jpg" alt="Acoustic Sessions" />
+                                <div class="playlist-overlay">
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Acoustic Sessions</h3>
+                                <p>Stripped down melodies</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card" data-playlist="rnb">
+                            <div class="playlist-image">
+                                <img src="Stay.jpg" alt="R&B Classics" />
+                                <div class="playlist-overlay">
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>R&B Classics</h3>
+                                <p>Smooth and soulful</p>
+                            </div>
+                        </div>
+
+                        <div class="playlist-card" data-playlist="electronic">
+                            <div class="playlist-image">
+                                <img src="Charlieputt.jpg" alt="Electronic Beats" />
+                                <div class="playlist-overlay">
+                                    <span class="play-icon">▶</span>
+                                </div>
+                            </div>
+                            <div class="playlist-info">
+                                <h3>Electronic Beats</h3>
+                                <p>Energetic vibes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
 
 
-
-
-
-
+    <div class="hero-content" style="padding: 0 20px;">
+        <h2 class="hero-title">Trending Songs</h2>
+        <p class="hero-subtitle">Listen to the latest hits</p>
+    </div>
 
     <div class="music-list" id="musicList">
         <!-- Sample Songs -->
-
         <div class="song" data-src="song1.mp3" data-title="Sapphire" data-artist="Ed Sheeran" data-img="cover1.jpg">
             <div class="song-details">
                 <span class="song-number">1</span>
@@ -158,6 +251,9 @@
         </div>
 
     </div>
+
+
+
 
 
 
